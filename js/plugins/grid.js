@@ -57,10 +57,12 @@ Flotr.addPlugin('graphGrid', {
       });
     }
     function drawVerticalLines (x) {
+      ctx.setLineDash([8, 4])
       ctx.moveTo(x, 0);
       ctx.lineTo(x, plotHeight);
     }
     function drawHorizontalLines (y) {
+      ctx.setLineDash([8, 4])
       ctx.moveTo(0, y);
       ctx.lineTo(plotWidth, y);
     }
